@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">tugasmobile</string>
+    <string name="nim">201055001</string>
+    <string name="nama_lengkap">Muhammad Rizqy Ath-Thaariq</string>
+    <string name="panggilan">Kang Thoriq</string>
+    <string name="istri">Shibuya Kanon</string>
+    <string name="jurusan">Informatika</string>
+    <string name="label_pesan">Masukkan Pesan:</string>
+    <string name="pesan">Kirim Pesan!</string>
+    <string name="instagram">Instagram</string>
+    <string name="dial_phone">Telepon</string>
+    <string name="liella">liella</string>
+    <string name="tmb_ubah">Ubah data</string>
+    <string name="tmb_tugas2">Pindah ke Latihan Fragment</string>
+    <string name="label_nama">Masukkan Nama Lengkap</string>
+    <string name="label_nim">Masukkan NIM</string>
+    <string name="label_jurusan">Masukkan Jurusan</string>
+    <string name="label_ubah">Ubah Data!</string>
+    <string name="title_activity_bottom_navigation">BottomNavigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_team_list">Team List</string>
 </resources>

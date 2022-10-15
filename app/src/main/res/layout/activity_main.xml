@@ -6,13 +6,164 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:scaleX="1"
+        android:scaleY="1.1"
+        android:src="@drawable/liella"
+        app:layout_constraintBottom_toBottomOf="@id/profile_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        android:contentDescription="@string/liella"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/shibuya_kuma"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
     <TextView
+        android:id="@+id/tv_nim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nim"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_image"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/tv_nama_lengkap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nama_lengkap"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_nim"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/tv_jurusan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/jurusan"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_nama_lengkap"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/tv_pesan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/label_pesan"
+        android:textSize="14sp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintLeft_toLeftOf="@id/btn_kirim_pesan"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_jurusan"
+         />
+
+    <EditText
+        android:hint="@string/label_pesan"
+        android:labelFor="@id/tv_pesan"
+        android:id="@+id/et_pesan"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/btn_kirim_pesan"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_pesan"
+        android:inputType="text"
+        android:autofillHints=""
+        />
+
+    <Button
+        android:id="@+id/btn_kirim_pesan"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="@string/pesan"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_pesan"
+        app:layout_constraintVertical_bias="0" />
+
+    <Button
+        android:id="@+id/btn_ig"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_photo_camera_back_24"
+        android:text="@string/instagram"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="@id/btn_kirim_pesan"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_kirim_pesan"
+        app:layout_constraintVertical_bias="0" />
+
+    <Button
+        android:id="@+id/btn_phone"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_phone_24"
+        android:text="@string/dial_phone"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/btn_kirim_pesan"
+        app:layout_constraintLeft_toRightOf="@id/btn_ig"
+        app:layout_constraintTop_toBottomOf="@id/btn_kirim_pesan"
+        app:layout_constraintVertical_bias="0" />
+
+    <Button
+        android:id="@+id/btn_ubah"
+        android:layout_marginHorizontal="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tmb_ubah"
+        android:textColor="@color/white"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintBottom_toTopOf="@id/btn_fragment"
+        app:layout_constraintEnd_toEndOf="@id/btn_kirim_pesan"
+        app:layout_constraintLeft_toRightOf="@id/btn_ig"
+        />
+
+    <Button
+        android:id="@+id/btn_fragment"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tmb_tugas2"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/btn_kirim_pesan"
+        app:layout_constraintLeft_toRightOf="@id/btn_ig"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
