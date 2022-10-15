@@ -12,14 +12,21 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_search"
         android:name="com.example.tugasmobile.ui.search.SearchFragment"
         android:label="@string/title_search"
         tools:layout="@layout/fragment_search" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.tugasmobile.ui.notifications.NotificationsFragment"
+        android:id="@+id/navigation_team_list"
+        android:name="com.example.tugasmobile.ui.teamlist.TeamListFragment"
         android:label="@string/title_team_list"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_team_list" />
+
+    <fragment
+        android:id="@+id/navigation_match_list"
+        android:name="com.example.tugasmobile.ui.matchlist.MatchListFragment"
+        android:label="@string/title_match_list"
+        tools:layout="@layout/fragment_match_list" />
+
 </navigation>
