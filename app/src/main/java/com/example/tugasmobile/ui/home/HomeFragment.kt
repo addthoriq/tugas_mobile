@@ -10,6 +10,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.tugasmobile.R
 import com.example.tugasmobile.databinding.FragmentHomeBinding
+import com.example.tugasmobile.databinding.FragmentMatchListBinding
+import com.example.tugasmobile.ui.matchlist.MatchListsViewModel
 import com.example.tugasmobile.ui.teamlist.TeamListFragment
 
 class HomeFragment : Fragment(), View.OnClickListener {
@@ -26,8 +28,18 @@ class HomeFragment : Fragment(), View.OnClickListener {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_home, container, false)
+    ): View {
+//        val homeListsViewModel =
+//            ViewModelProvider(this).get(HomeViewModel::class.java)
+//
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        val root: View = binding.root
+//
+//        val textView: TextView = binding.textHome
+//        homeListsViewModel.text.observe(viewLifecycleOwner) {
+//            textView.text = it
+//        }
+        return root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -41,8 +53,9 @@ class HomeFragment : Fragment(), View.OnClickListener {
     }
 
     private fun relationToXml(v: View){
-        btnTeamList = v.findViewById(R.id.btn_team_list)
-        btnTeamList.setOnClickListener(this)
+//        btnTeamList = v.findViewById(R.id.btn_team_list)
+//        btnTeamList = v.findViewById(R.id.btn_team_list)
+//        btnTeamList.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {

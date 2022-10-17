@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class TeamListsViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
+        value = "Ini Team List"
     }
     val text: LiveData<String> = _text
 }

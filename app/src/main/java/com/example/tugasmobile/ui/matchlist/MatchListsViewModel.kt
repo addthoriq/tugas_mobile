@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class MatchListsViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
+        value = "Ini Match List"
     }
     val text: LiveData<String> = _text
 }

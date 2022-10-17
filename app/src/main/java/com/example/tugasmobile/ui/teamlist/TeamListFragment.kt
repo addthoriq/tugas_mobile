@@ -28,7 +28,7 @@ class TeamListFragment : Fragment() {
         _binding = FragmentTeamListBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textNotifications
+        val textView: TextView = binding.textTeamList
         matchListsViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }

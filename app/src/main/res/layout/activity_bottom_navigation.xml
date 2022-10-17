@@ -30,4 +30,30 @@
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/mobile_navigation" />
 
+    <Button
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/btn_team_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_team_list"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        />
+
+    <Button
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/btn_match_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_match_list"
+        app:layout_constraintTop_toBottomOf="@id/btn_team_list"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
